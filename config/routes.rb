@@ -3,13 +3,8 @@ Rails.application.routes.draw do
   
   
 
-  get 'projects/index'
-
-  get 'projects/show'
-
-  get 'posts/index'
-
-  get 'posts/show'
+  resources :projects
+  resources :posts
 
   namespace :admin do 
     resources :projects
