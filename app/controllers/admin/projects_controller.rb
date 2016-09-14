@@ -22,7 +22,8 @@ class Admin::ProjectsController < ApplicationController
   def project_params
     params.require(:project).permit(:title,
                                     :description,
-                                    :image, 
+                                    :image,
+                                    :importance, 
                                     tag_ids: [])
   end
 end
