@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160914223228) do
+ActiveRecord::Schema.define(version: 20160915030806) do
 
   create_table "post_taggings", force: :cascade do |t|
     t.integer  "post_id"
@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 20160914223228) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.integer  "importance"
+    t.string   "github_url"
+    t.string   "production_url"
   end
 
   create_table "tags", force: :cascade do |t|

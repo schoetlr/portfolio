@@ -26,6 +26,18 @@
     <%= f.text_field :importance, class: "form-control" %>
   </div>
 
+  <%= f.label :github_url %>
+  
+  <div class="form-group">
+    <%= f.text_field :github_url, class: "form-control" %>
+  </div>
+
+  <%= f.label :production_url %>
+  
+  <div class="form-group">
+    <%= f.text_field :production_url, class: "form-control" %>
+  </div>
+
   <div class="form-group">
   <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name, {}, class: "form-control") %>
   </div>
