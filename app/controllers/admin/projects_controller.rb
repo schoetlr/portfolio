@@ -23,7 +23,9 @@ class Admin::ProjectsController < ApplicationController
     params.require(:project).permit(:title,
                                     :description,
                                     :image,
-                                    :importance, 
+                                    :importance,
+                                    :github_url,
+                                    :production_url, 
                                     tag_ids: [])
   end
 end
