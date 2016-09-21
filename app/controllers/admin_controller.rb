@@ -1,6 +1,7 @@
 class AdminController < ApplicationController
-  before_action :authenticate_user
+  #before_action :authenticate_user
 
+  #NOT AUTHENTICATING IN DEVELOPMENT
  
   USERS = { ENV["USERNAME"] => ENV["PASSWORD"] }
   #set these environment variables on heroku when deploying

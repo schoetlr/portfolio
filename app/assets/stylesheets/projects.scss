@@ -1,3 +1,37 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.project-title {
+  text-align: center;
+}
+
+
+.project-description {
+  text-align: center;
+}
+
+
+p {
+  text-align: center;
+}
+
+span.label {
+  color: black;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+
+.project {
+
+  border: solid 2px black;  
+  padding: 10px;
+  border-radius: 5px;
+  height: 600px;
+
+  .project-image {
+    margin-left: 20px;
+  }
+}

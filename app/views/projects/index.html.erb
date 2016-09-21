@@ -1,2 +1,36 @@
-<h1>Projects#index</h1>
-<p>Find me in app/views/projects/index.html.erb</p>
+<div class="row" id="projects">
+  <% @projects.each do |project| %>
+    <div class="col-xs-12 col-md-4">
+      <div class="project">
+        <div class="row">
+          <div class="col-xs-12">
+            <%= image_tag project.image.url(:medium), size: "300x300", class: "project-image" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="project-title"><%= project.title %></h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="project-description"><%= project.description %></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <p><span class="label">Github:</span><%= link_to project.github_url, project.github_url,  class: "github-url" %></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <p><span class="label">View at:</span><%= link_to project.production_url, project.production_url, class: "production-url" %></p>
+          </div>
+        </div>
+      </div><!-- end project -->
+    </div><!-- end col -->
+  <% end %>
+</div>
