@@ -1,6 +1,6 @@
 <div class="row" id="tag-form">
-  <div class="col-xs-12">
-    <%= form_tag "/projects", method: :get do %>
+  <div class="col-xs-12 col-md-offset-4">
+    <%= form_tag "/projects", method: :get, id: "tag-filter" do %>
       <%= label_tag "tag", "Sort Projects by Tag" %>
       <%= select_tag "tag", options_for_select(@tags.map{|tag| [tag.name, tag.name] }) %>
 
@@ -8,7 +8,7 @@
     <% end %>
   </div>
 
-  <div class="col-xs-12">
+  <div class="col-xs-12 col-md-offset-4">
     <%= link_to "All Projects", projects_path %>
   </div>
 </div>
