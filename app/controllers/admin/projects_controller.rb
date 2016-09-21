@@ -15,6 +15,20 @@ class Admin::ProjectsController < AdminController
   end
 
   def edit
+    @project = Project.find(params[:id])
+  end
+
+  def update
+    @project = Project.find(params[:id])
+
+    if @project.update(project_params)
+      flash[:success] = "Project Updated"
+      redirect_to root_path
+    else
+      flash[:error] = "Something went wrong"
+      render :edit
+    end
+
   end
 
   private
