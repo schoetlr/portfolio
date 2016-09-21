@@ -7,4 +7,15 @@ class Project < ActiveRecord::Base
   has_attached_file :image, :styles => { :medium => "300x300", :thumb => "100x100" }
   
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+
+
+  def self.with_tag(tag)
+    #hacky for now
+    #use a query later
+
+    Project.all.to_a.select do |project|
+      project.tags.to_a.map{|t| t.name }.include?(tag)
+    end
+
+  end
 end
