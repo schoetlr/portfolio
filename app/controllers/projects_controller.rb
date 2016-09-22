@@ -7,6 +7,12 @@ class ProjectsController < ApplicationController
     else
       @projects = Project.order(importance: "desc")
     end
+
+    respond_to do |format|
+      format.html
+
+      format.js { render :index }
+    end 
   end
 
   def show

@@ -1,0 +1,13 @@
+
+$("#projects").children().remove();
+
+<% @projects.each do |project| %>
+
+  var project = "<%= j(render partial: "project", locals: {project: project}) %>" 
+  $project = $(project);
+
+  
+  $("#projects").append($project); 
+
+
+<% end %>
