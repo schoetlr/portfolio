@@ -2,6 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+#about {
+  margin-bottom: 300px;
+
+  h1 {
+    font-family: palatino;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+
+
 #header {
   
   margin-bottom: 150px;

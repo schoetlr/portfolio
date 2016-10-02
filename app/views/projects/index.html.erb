@@ -1,6 +1,8 @@
 <%= render partial: "header" %>
 
 
+<%= render partial: "layouts/about" %>
+
 <div class="row" id="tag-form">
   <div class="col-xs-12 col-md-offset-4">
     <%= form_tag "/projects", remote: true, method: :get, id: "tag-filter" do %>
