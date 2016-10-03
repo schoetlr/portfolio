@@ -1,33 +1,41 @@
 <%= render partial: "header" %>
 
 
-<%= render partial: "layouts/about" %>
+<%= render partial: "about" %>
 
 
-
-<div class="row">
-  <div class="col-xs-12">
-    <h1 class="text-center"><a name="portfolio">Portfolio</a></h1>
+<section id="portfolio-section">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center"><a name="portfolio">Portfolio</a></h1>
+    </div>
   </div>
-</div>
 
-<div class="row" id="tag-form">
-  <div class="col-xs-12 col-md-offset-4">
-    <%= form_tag "/projects", remote: true, method: :get, id: "tag-filter" do %>
-      <%= label_tag "tag", "Sort Projects by Tag" %>
-      <%= select_tag "tag", options_for_select(@tags.map{|tag| [tag.name, tag.name] }) %>
+  <div class="row" id="tag-form">
+    <div class="col-xs-12 col-md-offset-4">
+      <%= form_tag "/projects", remote: true, method: :get, id: "tag-filter" do %>
+        <%= label_tag "tag", "Sort Projects by Tag" %>
+        <%= select_tag "tag", options_for_select(@tags.map{|tag| [tag.name, tag.name] }) %>
 
-      <%= submit_tag "Sort", class: "btn btn-primary" %>
+        <%= submit_tag "Sort", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+
+    <div class="col-xs-12 col-md-offset-4">
+      <%= link_to "All Projects", projects_path, remote: true %>
+    </div>
+  </div>
+
+  <div class="row" id="projects">
+    <% @projects.each do |project| %>
+      <%= render partial: "project", locals: { project: project } %>
     <% end %>
   </div>
 
-  <div class="col-xs-12 col-md-offset-4">
-    <%= link_to "All Projects", projects_path, remote: true %>
-  </div>
-</div>
 
-<div class="row" id="projects">
-  <% @projects.each do |project| %>
-    <%= render partial: "project", locals: { project: project } %>
-  <% end %>
-</div>
+</section>
+
+<%= render partial: "skills" %>
+
+
+<%= render partial: "contact" %>

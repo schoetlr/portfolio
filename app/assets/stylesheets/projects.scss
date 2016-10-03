@@ -3,6 +3,51 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+* {
+  font-family: palatino;
+}
+
+#portfolio-section {
+  h1 {
+    margin-bottom: 25px;
+    font-family: palatino;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#skills {
+  margin-top: 300px;
+  margin-bottom: 300px;
+
+  h1 {
+    margin-bottom: 25px;
+    font-family: palatino;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#contact {
+  margin-top: 500px;
+
+  h1 {
+    margin-bottom: 25px;
+    font-family: palatino;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 #about {
   margin-bottom: 300px;
 
