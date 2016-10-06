@@ -5,9 +5,10 @@ class Project < ActiveRecord::Base
   validates :importance, inclusion: { in: 0..10 }
 
   has_attached_file :image, 
-                    :styles => { :medium => "300x300", :thumb => "100x100" },
-                    :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
-                    :url => "/system/:attachment/:id/:style/:filename"
+                    :styles => { :medium => "300x300", :thumb => "100x100" }
+                    #,
+                    # :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
+                    # :url => "/system/:attachment/:id/:style/:filename"
   
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 

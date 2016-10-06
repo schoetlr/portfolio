@@ -20,13 +20,17 @@
     <div class="project-links">
       <div class="row">
         <div class="col-xs-12">
-          <p class="pull-left label">Github:</p><%= link_to project.github_url, project.github_url,  id: "github-url" %>
+          <%= link_to project.github_url, class: "text-center", id: "github-url" do %>
+            View on Github
+          <% end %>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <p class="pull-left label">Live:</p><%= link_to project.production_url, project.production_url, id: "production-url" %>
+          <%= link_to "View Live", project.production_url, class: "text-center", id: "production-url" %>
+
+
         </div>
       </div>
     </div> <!-- end project links -->
