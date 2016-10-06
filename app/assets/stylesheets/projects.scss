@@ -4,18 +4,71 @@
 
 
 * {
-  font-family: palatino;
+  font-family: cooper;
 }
 
 #portfolio-section {
   h1 {
     margin-bottom: 25px;
-    font-family: palatino;
+    font-family: cooper;
   }
 
   h1 a {
     text-decoration: none;
     color: black;
+  }
+
+  .project-links {
+    margin-top: 45px;
+  }
+
+  #tag-form {
+  margin-bottom: 50px;
+}
+  .project-title {
+    text-align: center;
+  }
+
+
+  .project-description {
+    text-align: center;
+  }
+
+
+  p {
+    text-align: center;
+
+  }
+
+  p.label {
+    color: black;
+    margin-right: 5px;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  
+
+  #github-url, #production-url {
+    word-wrap: break-word;
+    width: 10px;
+    font-size: 16px;
+  }
+
+  .col-md-4 {
+    padding: 10px;
+  }
+
+  .project {
+
+    border: solid 2px black;  
+    padding: 10px;
+    border-radius: 5px;
+    height: 600px;
+
+    .project-image {
+      margin-left: 20px;
+    }
   }
 }
 
@@ -25,7 +78,7 @@
 
   h1 {
     margin-bottom: 25px;
-    font-family: palatino;
+    font-family: cooper;
   }
 
   h1 a {
@@ -39,7 +92,7 @@
 
   h1 {
     margin-bottom: 25px;
-    font-family: palatino;
+    font-family: cooper;
   }
 
   h1 a {
@@ -52,7 +105,7 @@
   margin-bottom: 300px;
 
   h1 {
-    font-family: palatino;
+    font-family: cooper;
   }
 
   h1 a {
@@ -69,16 +122,16 @@
   margin-bottom: 150px;
 
   h1 {
-    font-family: palatino;
+    font-family: cooper;
     font-size: 50px;
   }
 
   h2 {
-    font-family: palatino;
+    font-family: cooper;
   }
 
   a {
-    font-family: palatino;
+    font-family: cooper;
     text-decoration: none;
     color: black;
     font-size: 25px;
@@ -95,38 +148,3 @@
 
 
 
-#tag-form {
-  margin-bottom: 50px;
-}
-.project-title {
-  text-align: center;
-}
-
-
-.project-description {
-  text-align: center;
-}
-
-
-p {
-  text-align: center;
-}
-
-span.label {
-  color: black;
-  margin-right: 5px;
-  font-size: 16px;
-}
-
-
-.project {
-
-  border: solid 2px black;  
-  padding: 10px;
-  border-radius: 5px;
-  height: 600px;
-
-  .project-image {
-    margin-left: 20px;
-  }
-}
