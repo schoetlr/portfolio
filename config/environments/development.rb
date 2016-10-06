@@ -41,7 +41,7 @@ Rails.application.configure do
 
     # Don't forget to make S3 your storage option!
     :storage => :s3,
-
+    :s3_region => ENV['AWS_REGION'],
     :s3_credentials => {
 
       # put your host name here if needed
