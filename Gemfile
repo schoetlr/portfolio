@@ -36,6 +36,8 @@ group :production do
   gem 'rails_12factor'
   gem 'pg'
   gem 'rmagick'
+
+  #will get rid of this when confirm it works w/o
   gem 'paperclip'
 
 end
