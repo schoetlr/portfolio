@@ -34,6 +34,8 @@
     text-align: center;
   }
 
+  
+
 
   p {
     text-align: center;
@@ -53,6 +55,11 @@
     word-wrap: break-word;
     width: 10px;
     font-size: 16px;
+  }
+
+  .project-links a {
+    text-decoration: none;
+    color: black;
   }
 
   .col-md-4 {
