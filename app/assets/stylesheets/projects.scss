@@ -88,18 +88,23 @@
     padding: 10px;
   }
 
+  .project-image {
+    border-radius: 10px;
+  }
+
   .project {
 
-    border: solid 2px black;  
+    border: solid 2px #BCBDC0;  
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 600px;
-
+    background-color: #BCBDC0;
     
   }
 
   .project-wrapper {
     margin-bottom: 40px;
+
   }
 }
 
