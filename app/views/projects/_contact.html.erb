@@ -1,28 +1,32 @@
-<section id="contact">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1 class="text-center"><a name="contact">Contact</a></h1>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-sm-4 contact-col col-xs-12">
-      <%= link_to "https://github.com/schoetlr", class: "text-center" do %>
-        <i class="fa fa-github-square fa-4x contact-fa center-block" aria-hidden="true"></i>
-      <% end %>
+<section id="contact-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center"><a name="contact">Contact</a></h1>
+      </div>
     </div>
 
-    <div class="col-sm-4 contact-col col-xs-12">
-      <%= link_to "mailto:srlrs20020@gmail.com", class: "text-center"  do %>
-        <i class="fa fa-envelope fa-4x contact-fa center-block" aria-hidden="true"></i>
-      <% end %>
-    </div>
 
-    <div class="col-sm-4 contact-col col-xs-12">
-      <%= link_to "https://www.linkedin.com/in/luke-schoettinger-a23874121", class: "text-center"  do %>
-        <i class="fa fa-linkedin-square fa-4x contact-fa center-block" aria-hidden="true"></i>
-      <% end %>
+    <div class="row">
+      <div class="col-sm-4 contact-col col-xs-12">
+        <%= link_to "https://github.com/schoetlr", class: "text-center" do %>
+          <i class="fa fa-github-square fa-4x contact-fa center-block" aria-hidden="true"></i>
+        <% end %>
+      </div>
+
+      <div class="col-sm-4 contact-col col-xs-12">
+        <%= link_to "mailto:srlrs20020@gmail.com", class: "text-center"  do %>
+          <i id="envelope" class="fa fa-envelope fa-4x contact-fa center-block" aria-hidden="true"></i>
+        <% end %>
+
+        <p id="email-label" class="text-center">srlrs20020@gmail.com</p>
+      </div>
+
+      <div class="col-sm-4 contact-col col-xs-12">
+        <%= link_to "https://www.linkedin.com/in/luke-schoettinger-a23874121", class: "text-center"  do %>
+          <i class="fa fa-linkedin-square fa-4x contact-fa center-block" aria-hidden="true"></i>
+        <% end %>
+      </div>
     </div>
   </div>
 </section>

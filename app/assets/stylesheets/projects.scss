@@ -3,6 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
+//color scheme here
+
+#header-wrapper, #about-wrapper {
+  background-color: #B1C1C0;
+}
+
+#portfolio-section {
+  background-color: #D8D8F6;
+}
+
+#skills-wrapper {
+  background-color: #CB8589;
+}
+
+#contact-wrapper {
+  background-color: #89B6A5;
+}
+
+
+//end color scheme
+
 * {
   font-family: cooper;
 }
@@ -77,9 +99,9 @@
   }
 }
 
-#skills {
-  margin-top: 300px;
-  margin-bottom: 300px;
+#skills-wrapper {
+  padding-top: 50px;
+  padding-bottom: 300px;
 
   h1 {
     margin-bottom: 25px;
@@ -92,9 +114,9 @@
   }
 }
 
-#contact {
-  margin-top: 500px;
-
+#contact-wrapper {
+  padding-top: 50px;
+  padding-bottom: 400px;
   h1 {
     margin-bottom: 25px;
     font-family: cooper;
@@ -109,10 +131,16 @@
     text-decoration: none;
     color: black;
   }
+
+  #email-label {
+    display: none;
+    color: black;
+    font-size: 16px;
+  }
 }
 
-#about {
-  margin-bottom: 300px;
+#about-wrapper {
+  padding-bottom: 300px;
 
   h1 {
     font-family: cooper;
@@ -125,23 +153,31 @@
 
   p { 
     font-size: 20px;
+    color: black;
+  }
+
+  p a {
+    text-decoration: none;
+    color: navy;
   }
 }
 
 
 
 
-#header {
+#header-wrapper {
   
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 
   h1 {
     font-family: cooper;
     font-size: 50px;
+    color: black;
   }
 
   h2 {
     font-family: cooper;
+    color: black;
   }
 
   a {
