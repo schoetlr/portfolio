@@ -1,4 +1,4 @@
 $(document).ready(function() {
    
-   $('#nav-links').localScroll({duration: 500});
+   $('.nav-links').localScroll({duration: 500});
 });
