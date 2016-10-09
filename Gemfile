@@ -37,8 +37,7 @@ group :production do
   gem 'pg'
   gem 'rmagick'
 
-  #will get rid of this when confirm it works w/o
-  gem 'paperclip'
+  
 
 end
 
