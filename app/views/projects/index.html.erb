@@ -13,7 +13,7 @@
     </div>
 
     <div class="row" id="tag-form">
-      <div class="col-xs-12 col-md-offset-4">
+      <div class="col-xs-12 col-md-offset-4 col-xs-offset-4">
         <%= form_tag "/projects", remote: true, method: :get, id: "tag-filter" do %>
           <%= label_tag "tag", "Sort Projects by Tag" %>
           <%= select_tag "tag", options_for_select(@tags.map{|tag| [tag.name, tag.name] }) %>
@@ -22,7 +22,7 @@
         <% end %>
       </div>
 
-      <div class="col-xs-12 col-md-offset-4">
+      <div class="col-xs-12 col-md-offset-4 col-xs-offset-4">
         <%= link_to "All Projects", projects_path, remote: true %>
       </div>
     </div>
