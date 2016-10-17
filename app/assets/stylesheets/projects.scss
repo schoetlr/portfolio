@@ -112,6 +112,10 @@
   padding-top: 200px;
   padding-bottom: 400px;
 
+  .row {
+    margin-bottom: 50px;
+  }
+
   h1 {
     margin-bottom: 25px;
     font-family: cooper;
@@ -120,6 +124,19 @@
   h1 a {
     text-decoration: none;
     color: black;
+  }
+
+  h2 {
+    color: black;
+  }
+
+  .language {
+    height: 100px;
+    width: 100px;
+  }
+
+  #rspec {
+    margin-top: 115px;
   }
 }
 
@@ -146,6 +163,8 @@
     color: black;
     font-size: 16px;
   }
+
+
 }
 
 #about-wrapper {
